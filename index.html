@@ -36,4 +36,171 @@
   }
 
   nav a:hover {
-    color: #d6b46a
+    color: #d6b46a;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 120px 10%;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    max-width: 700px;
+    margin: auto;
+    color: #b8b8b8;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .btn {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #d6b46a, #b8923d);
+    color: #0a0a0a;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+
+  section {
+    padding: 90px 10%;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #d6b46a;
+    margin-bottom: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+
+  .card {
+    background: #111;
+    padding: 25px;
+    border: 1px solid rgba(214,180,106,0.15);
+    border-radius: 10px;
+  }
+
+  .card h3 {
+    color: #d6b46a;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .card p {
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .about {
+    background: #0d0d0d;
+    border-top: 1px solid rgba(214,180,106,0.1);
+    border-bottom: 1px solid rgba(214,180,106,0.1);
+  }
+
+  form {
+    max-width: 500px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    background: #111;
+    border: 1px solid rgba(214,180,106,0.2);
+    color: #fff;
+    border-radius: 6px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+    color: #777;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">LineaWeb</div>
+  <nav>
+    <a href="#servizi">Servizi</a>
+    <a href="#chi">Studio</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Siti web di lusso per aziende moderne</h1>
+  <p>
+    Creiamo esperienze digitali eleganti e professionali per aziende che vogliono distinguersi e trasmettere valore immediato.
+  </p>
+  <a class="btn" href="#contatti">Richiedi consulenza</a>
+</section>
+
+<section id="servizi">
+  <h2>Servizi esclusivi</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Siti Premium</h3>
+      <p>Design eleganti e moderni per comunicare fiducia e valore.</p>
+    </div>
+
+    <div class="card">
+      <h3>E-commerce</h3>
+      <p>Shop online per vendere prodotti in modo professionale.</p>
+    </div>
+
+    <div class="card">
+      <h3>Brand Identity</h3>
+      <p>Costruiamo la tua immagine digitale per distinguerti.</p>
+    </div>
+
+    <div class="card">
+      <h3>SEO Strategico</h3>
+      <p>Ti portiamo su Google per attrarre clienti reali.</p>
+    </div>
+  </div>
+</section>
+
+<section id="chi" class="about">
+  <h2>Lo Studio</h2>
+  <p style="max-width:800px;">
+    LineaWeb è uno studio digitale che crea siti web premium, eleganti e orientati ai risultati.
+    L’obiettivo è trasformare la tua presenza online in uno strumento di crescita reale.
+  </p>
+</section>
+
+<section id="contatti">
+  <h2>Contatto</h2>
+
+  <form>
+    <input type="text" placeholder="Nome">
+    <input type="email" placeholder="Email">
+    <textarea rows="5" placeholder="Descrivi il tuo progetto"></textarea>
+    <button class="btn" type="submit">Invia richiesta</button>
+  </form>
+</section>
+
+<footer>
+  © LineaWeb Studio — Tutti i diritti riservati
+</footer>
+
+</body>
+</html>
